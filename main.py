@@ -235,7 +235,7 @@ def get_scheduler(optimizer, n_iter_per_epoch):
         scheduler = GradualWarmupScheduler(
             optimizer,
             multiplier=cfg.train.warmup_params.multiplier,
-            total_epoch=cfg.train.warmup_params.epoch * n_iter_per_epoch,
+            warmup_epoch=cfg.train.warmup_params.epoch * n_iter_per_epoch,
             after_scheduler=cosine_scheduler)
     else:
         scheduler = None
