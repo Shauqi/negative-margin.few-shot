@@ -347,7 +347,3 @@ if __name__ == '__main__':
 
     main()
 
-    # print config again
-    print('======CONFIGURATION START======')
-    pprint(cfg)
-    print('======CONFIGURATION END======')
